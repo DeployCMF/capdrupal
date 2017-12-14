@@ -62,7 +62,7 @@
 
 
 
- server "192.168.0.17",
+ server "192.168.43.17",
    user: "nadir",
    roles: %w{web app},
    ssh_options: {
