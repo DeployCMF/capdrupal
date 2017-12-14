@@ -1,0 +1,42 @@
+/**
+ * Node styling.
+ */
+
+.node-preview-container {
+  margin-top: -($grid-gutter-width / 2);
+}
+
+.node-preview-form-select {
+  padding: ($grid-gutter-width / 2);
+}
+
+.node__meta{
+  color: green ; 
+}
+
+
+.node-readmore{
+  font-family: helvetica;
+  color: red;
+  text-decoration: none;
+
+}
+
+.block {
+    border-radius: 15px 15px 15px 15px;
+   -webkit-border-radius : 15px 15px 15px 15px;
+   -moz-border-radius : 15px 15px 15px 15px;
+   border: 1px solid #4b86de;
+   transform: rotate(0deg); 
+   padding : 6px ; 
+   background-color: #EAEAEA ; 
+   margin-bottom: 10px;
+}
+
+.block-title{
+	color:red ; 
+}
+
+.block .content {
+	color:black ; 
+}
