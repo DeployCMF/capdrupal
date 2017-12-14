@@ -2,8 +2,8 @@
 
 lock '3.10.0'
 
-set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :application, "d8_deploy"
+set :repo_url, "git@github.com:DeployCMF/capdrupal.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -44,8 +44,8 @@ set :repo_url, "git@example.com:me/my_repo.git"
 set :user, "www-data"
 set :group, "www-data"
 set :runner_group, "www-data"
-set :domain, "http://sitedomain"
-set :deploy_to, "/var/www"
+set :domain, "192.168.0.17"
+set :deploy_to, "/var/www/html"
 set :linked_files, %w{web/sites/default/settings.php}
 set :app_path, "drupal"
 set :shared_children, ['drupal/sites/default/files']
