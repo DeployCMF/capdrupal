@@ -59,3 +59,16 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+
+
+ server "192.168.0.17",
+   user: "nadir",
+   roles: %w{web app},
+   ssh_options: {
+     user: "nadir", # overrides user setting above
+     keys: %w(/home/nadir/.ssh/id_rsa),
+     forward_agent: false,
+     auth_methods: %w(publickey password)
+     #password: "please use keys"
+   }

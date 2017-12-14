@@ -9,14 +9,19 @@ end
 end
 end
 end
+
+
 namespace :server do
 desc 'Run Chown dir'
 task :chowndir do
 on roles(:web) do
 within fetch(:root_dir) do
-execute :chown, "-R www-data:www-data /var/www/html"
+
+execute :chown, "-R nadir:nadir /var/www/html"
 end
 end
 end
 end
 end
+
+
