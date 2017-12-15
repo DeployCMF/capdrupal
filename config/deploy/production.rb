@@ -57,12 +57,11 @@
 #     keys: %w(/home/user_name/.ssh/id_rsa),
 #     forward_agent: false,
 #     auth_methods: %w(publickey password)
-#     # password: "please use keys"
-#   }
+#     # password: "please us172.17.0.1
 
 
 
- server "192.168.43.17",
+ server "172.17.0.1",
    user: "nadir",
    roles: %w{web app},
    ssh_options: {

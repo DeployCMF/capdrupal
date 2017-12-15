@@ -9642,3 +9642,8 @@ p:last-child,
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
 }
+
+
+.col-sm-9{
+  color: red ; 
+}
