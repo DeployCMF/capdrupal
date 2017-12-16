@@ -59,9 +59,10 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please us172.17.0.1
 
+role :app, %w{nadir@192.168.0.22}
 
 
- server "172.17.0.1",
+ server "192.168.0.22",
    user: "nadir",
    roles: %w{web app},
    ssh_options: {
@@ -71,3 +72,4 @@
      auth_methods: %w(publickey password)
      #password: "please use keys"
    }
+
