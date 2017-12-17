@@ -51,13 +51,5 @@
 # ------------------------------------
 
 
- server "172.17.0.1",
-   user: "nadir",
-   roles: %w{web app},
-   ssh_options: {
-     user: "nadir", # overrides user setting above
-     keys: %w(/home/nadir/.ssh/id_rsa),
-     forward_agent: false,
-     auth_methods: %w(publickey password)
-     #password: "please use keys"
-   }
+role :web, %w{nadir@192.168.43.244}
+server '192.168.43.244', user: 'nadir', roles: %w{web}
