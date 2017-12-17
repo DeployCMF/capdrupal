@@ -1,0 +1,26 @@
+
+hello.kader_controller_hello:
+  path: '/salut/{name}'
+  defaults:
+    _controller: '\Drupal\hello\Controller\KaderController::hello'
+    _title: 'KaderController'
+  requirements:
+    _permission: 'access content'
+
+
+hello.kader_controller_somme:
+  path: '/somme/{a}/{b}'
+  defaults:
+    _controller: '\Drupal\hello\Controller\KaderController::somme'
+    _title: 'KaderControllerE'
+  requirements:
+    _permission: 'access content'
+
+hello.somme_form:
+  path: '/hello/form/somme'
+  defaults:
+    _form: '\Drupal\hello\Form\SommeForm'
+    _title: 'SommeForm'
+  requirements:
+    _access: 'TRUE'
+  

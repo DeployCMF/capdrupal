@@ -1,0 +1,7 @@
+services:
+  hello.kadour:
+    class: Drupal\hello\Command\DefaultCommand
+    arguments: []
+    tags:
+      - { name: drupal.command }
+

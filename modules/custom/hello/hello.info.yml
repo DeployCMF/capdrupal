@@ -1,5 +1,5 @@
 name: hello
 type: module
-description: My Awesome Module
+description: kader new module
 core: 8.x
-package: Custom
+package: UPMF
